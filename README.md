@@ -27,5 +27,19 @@ $ pip install -r requirements.txt
 ## Create Django Project
 
 ```bash
-$ django-admin.py startproject prfiles_project .
+$ django-admin.py startproject profiles_project .
 ```
+
+## Create Django App
+
+```bash
+$ python manage.py startapp profiles_api
+```
+
+## Adding apps in settings.py
+
+#### Add these uner installed_apps:
+
+'rest_framework'
+'rest_framework.authtoken'
+'profiles_api'
