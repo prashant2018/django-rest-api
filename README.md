@@ -40,6 +40,34 @@ $ python manage.py startapp profiles_api
 
 #### Add these uner installed_apps:
 
-'rest_framework'
-'rest_framework.authtoken'
-'profiles_api'
+rest_framework,
+rest_framework.authtoken,
+profiles_api
+
+## Run Server
+
+```bash
+$ python manage.py runserver 0.0.0.0:8000
+```
+
+## Create Database
+
+#### Create a model
+
+#### Create a manager so custom model can be used from cli
+
+Managers create function whichcan be used to create user etc
+
+#### Configure project to use custom model for auth
+
+In settings.py add at the end
+
+```
+AUTH_USER_MODEL = 'profiles_api.UserProfile'
+```
+
+## Django Migration
+
+```bash
+$ python manage.py makemigrations profiles_api
+```
