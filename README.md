@@ -1,4 +1,4 @@
-# Django Rest API
+# Django Rest Profile API
 
 ## Create Virtual Env
 
@@ -16,4 +16,16 @@ $ source venv/bin/activate
 
 #Deactivate
 $ deactivate
+```
+
+## Install Dependencies
+
+```bash
+$ pip install -r requirements.txt
+```
+
+## Create Django Project
+
+```bash
+$ django-admin.py startproject prfiles_project .
 ```
