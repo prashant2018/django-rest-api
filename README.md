@@ -82,3 +82,5 @@ $ python manage.py createsuperuser
 ## Register model in django admin panel
 
 Inside admin.py of your app register the model
+
+## APIViews
