@@ -56,7 +56,7 @@ $ python manage.py runserver 0.0.0.0:8000
 
 #### Create a manager so custom model can be used from cli
 
-Managers create function whichcan be used to create user etc
+Managers create function which can be used to create user etc
 
 #### Configure project to use custom model for auth
 
@@ -70,4 +70,15 @@ AUTH_USER_MODEL = 'profiles_api.UserProfile'
 
 ```bash
 $ python manage.py makemigrations profiles_api
+$ python manage.py migrate
 ```
+
+## Create Superuser
+
+```bash
+$ python manage.py createsuperuser
+```
+
+## Register model in django admin panel
+
+Inside admin.py of your app register the model
