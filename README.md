@@ -91,3 +91,11 @@ Add in views.py
 ## Serializer
 
 Create serializers.py file under the app
+
+## Viewsets
+
+Create a Vieset just like APIViews in views.py
+
+Viewsets offers list, create, update etc
+
+Add the vieset into the routes using DefauoltRouter which provides url for list, update etc
