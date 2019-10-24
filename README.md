@@ -84,3 +84,10 @@ $ python manage.py createsuperuser
 Inside admin.py of your app register the model
 
 ## APIViews
+
+Handles incoming request
+Add in views.py
+
+## Serializer
+
+Create serializers.py file under the app
