@@ -4,6 +4,7 @@ from rest_framework import status
 from rest_framework import viewsets
 
 from profiles_api import serializers
+from profiles_api import models
 
 
 class HelloApiView(APIView):
@@ -82,12 +83,14 @@ class HelloViewSet(viewsets.ViewSet):
 
     def partial_update(self, request, pk=None):
         """Handle updating partial object by ID"""
-        return Response({'method': 'Patch'})
-
-    def partial_update(self, request, pk=None):
-        """Handle updating partial object by ID"""
         return Response({'method': 'PATCH'})
 
     def destroy(self, request, pk=None):
         """Handle delete object by ID"""
         return Response({'method': 'DELETE'})
+
+
+class UserProfileViewSet(viewsets.ModelViewSet):
+    """Handle creating and updating profiles"""
+    serializer_class = serializers.UserProfileSerializer
+    queryset = models.UserProfile.objects.all()
