@@ -102,4 +102,18 @@ Add the vieset into the routes using DefauoltRouter which provides url for list,
 
 ## Permissions Class
 
-Create permission.py clas
+Create permission.py file. In the viewset assign permission class created to 'permission_classes'
+
+## Login API
+
+import the following in views.py and add the class to handle login
+
+```python
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.settings import api_settings
+
+class UserLoginApiView(ObtainAuthToken):
+    """Handle creating user authtoken"""
+    renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
+
+```
