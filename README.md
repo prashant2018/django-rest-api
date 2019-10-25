@@ -99,3 +99,7 @@ Create a Vieset just like APIViews in views.py
 Viewsets offers list, create, update etc
 
 Add the vieset into the routes using DefauoltRouter which provides url for list, update etc
+
+## Permissions Class
+
+Create permission.py clas
