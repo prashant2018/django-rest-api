@@ -117,3 +117,10 @@ class UserLoginApiView(ObtainAuthToken):
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
 
 ```
+
+## Steps
+
+1. Create a model
+2. Add model to admin pannel
+3. Create a serializer
+4. Create Viewset
